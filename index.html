@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neuroinveste - Hugo Heringer</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="./images/logodourado.png" alt="Logo Neuroinveste" class="h-8 w-8">
+        <span class="font-semibold">Neuroinveste</span>
+      </a>
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#conteudos" class="hover:text-yellow-400">Conteúdos</a>
+        <a href="#instagram" class="hover:text-yellow-400">Instagram</a>
+        <a href="#contato" class="hover:text-yellow-400">Fale comigo</a>
+      </div>
+
+      <!-- Botão mobile -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-gray-700">
+      <a href="#conteudos" class="block text-white hover:text-yellow-400">Conteúdos</a>
+      <a href="#instagram" class="block text-white hover:text-yellow-400">Instagram</a>
+      <a href="#contato" class="block text-white hover:text-yellow-400">Fale comigo</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-gray-900 text-white text-center py-16">
+    <img src="./images/apresentacao.jpg" alt="Hugo Heringer" class="mx-auto rounded-lg shadow-lg w-48 h-64 object-cover mb-6">
+    <h1 class="text-3xl font-bold">Hugo Heringer</h1>
+    <p class="mt-2 text-lg">Estudante de Psicologia • Entusiasta do Mercado Financeiro</p>
+  </header>
+<!-- Sobre Mim / Currículo -->
+<section id="sobre" class="bg-gray-100 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Foto -->
+    <div class="flex justify-center">
+      <img src="./images/sorridente.jpg" alt="Hugo Heringer sorridente" 
+           class="rounded-2xl shadow-lg w-full max-w-sm object-cover border-4 border-yellow-500">
+    </div>
+
+    <!-- Texto -->
+    <div class="space-y-6 text-gray-800">
+      <h2 class="text-3xl font-bold text-gray-900">👤 Sobre mim</h2>
+      <p>Sou <strong>Hugo Heringer Brandão</strong>, estudante de Psicologia no Centro Universitário UNIFACIG, com foco em Análise do Comportamento, Psicologia Organizacional e Finanças. Entusiasta do mundo dos criptoativos, busco unir ciência, comportamento humano e mercado financeiro para desenvolver estratégias inovadoras.</p>
+
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">💼 Experiência</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Professor de Inglês – CNA Manhuaçu (2022 - 2024)</li>
+          <li>Professor de Inglês – Colégio América Manhuaçu (2024)</li>
+          <li>Estágio em Psicologia do Esporte – Clube Boston City (2023)</li>
+          <li>Atendimento Terapêutico (AT) – Clínica ABALuz (2024 - 2025)</li>
+          <li>Assessor Parlamentar – Câmara Municipal de Manhuaçu (2025 - atual)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">🎓 Formação</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Ensino Médio – Colégio América Manhuaçu (2021)</li>
+          <li>Certificação Internacional em Inglês – Cambridge International Education (2021)</li>
+          <li>Psicologia (em andamento) – UNIFACIG (2022 - 2026)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">🚀 Habilidades</h3>
+        <p>Boa comunicação | Trabalho em equipe | Proatividade | Paciência | Organização | Foco em resultados | Aprendizagem contínua</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">💡 Diferenciais</h3>
+        <p>Conhecimento em Psicologia Organizacional e Análise do Comportamento | Interesse em Psicologia Financeira e Criptoativos | Experiência em contextos clínicos, educacionais, esportivos e políticos | Integração entre mente humana e estratégias financeiras</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Conteúdos -->
+  <section id="conteudos" class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Conteúdos</h2>
+
+    <!-- Grid desktop -->
+    <div class="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="./images/controleemocional.jpg" alt="Controle Emocional" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">🧠 Controle Emocional</h3>
+          <p class="text-sm text-gray-600">Evitar decisões por medo ou euforia nos investimentos.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="./images/psicologiadoinvestidor.jpg" alt="Psicologia do Investidor" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">📊 Psicologia do Investidor</h3>
+          <p class="text-sm text-gray-600">Entender como pensamos e agimos dentro do mercado financeiro.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="./images/criptoebolsadevalores.jpg" alt="Cripto e Bolsa de Valores" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">📈 Cripto & Bolsa de Valores</h3>
+          <p class="text-sm text-gray-600">Unir análise financeira e psicológica em diferentes mercados.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="./images/estrategiasconscientes.jpg" alt="Estratégias Conscientes" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">🎯 Estratégias Conscientes</h3>
+          <p class="text-sm text-gray-600">Investir com equilíbrio e clareza, sem perder o foco.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrossel mobile -->
+    <div class="md:hidden">
+      <div class="swiper content-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <img src="./images/controleemocional.jpg" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">🧠 Controle Emocional</h3>
+                <p class="text-sm">Evitar decisões por medo ou euforia nos investimentos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <img src="./images/psicologiadoinvestidor.jpg" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">📊 Psicologia do Investidor</h3>
+                <p class="text-sm">Entender como pensamos e agimos dentro do mercado financeiro.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <img src="./images/criptoebolsadevalores.jpg" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">₿ / 📈 Cripto & Bolsa de Valores</h3>
+                <p class="text-sm">Unir análise financeira e psicológica em diferentes mercados.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <img src="./images/estrategiasconscientes.jpg" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">🎯 Estratégias Conscientes</h3>
+                <p class="text-sm">Investir com equilíbrio e clareza, sem perder o foco.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Últimos do Instagram -->
+  <section id="instagram" class="bg-gray-100 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Últimos do Instagram</h2>
+    <div class="max-w-4xl mx-auto px-4">
+      <iframe src="http://lightwidget.com/widgets/ff8d615f300959b5be0298a8f07b208e.html" 
+              scrolling="no" allowtransparency="true" class="w-full h-[400px] border-0 overflow-hidden">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-center mb-6">Fale Comigo</h2>
+    <div class="bg-white shadow-lg rounded-2xl p-6">
+      <p class="mb-4 text-gray-700">Entre em contato para parcerias, projetos e pesquisas acadêmicas.</p>
+      <p><strong>Email:</strong> <a href="mailto:neuroinveste@gmail.com" class="text-blue-600">neuroinveste@gmail.com</a></p>
+      <p><strong>Telefone:</strong> (33) 9 8832-6566</p>
+      <p><strong>Localização:</strong> Manhuaçu - MG</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
+    © 2025 Hugo Heringer - Neuroinveste <br>
+    <span class="text-xs text-gray-400">
+      Este site é mantido por um estudante de Psicologia. Não possui intuito de oferecer atendimento clínico,
+      mas apenas divulgar conteúdos educacionais e buscar parcerias em projetos e pesquisas acadêmicas.
+    </span>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Menu mobile
+    document.getElementById("menu-btn").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Swiper (mobile)
+    var contentSwiper = new Swiper(".content-swiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>

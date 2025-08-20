@@ -1,0 +1,153 @@
+/* =========================================
+   RESET & BASE
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+nav a {
+  transition: color 0.3s ease;
+}
+
+/* Mobile menu suavizado */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================================
+   HERO
+========================================= */
+header img {
+  border: 4px solid #c89116; /* contorno dourado */
+}
+
+/* =========================================
+   CONTEÚDOS - CARDS
+========================================= */
+#conteudos .bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#conteudos .bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Garantir que imagens mantenham proporção */
+#conteudos img {
+  object-fit: cover;
+}
+
+/* =========================================
+   SWIPER (Carrossel Mobile)
+========================================= */
+.content-swiper {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.content-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: #34424d !important; /* cor cinza-azulada do projeto */
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c89116 !important; /* dourado */
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* =========================================
+   INSTAGRAM WIDGET
+========================================= */
+#instagram iframe {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 100% !important;
+  max-width: 100%;
+  height: 500px; /* altura ajustada */
+}
+
+/* Mobile ajusta a altura */
+@media (max-width: 768px) {
+  #instagram iframe {
+    height: 400px;
+  }
+}
+
+/* =========================================
+   CONTATO
+========================================= */
+#contato .bg-white {
+  border-left: 6px solid #c89116;
+}
+
+#contato a {
+  color: #34424d;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#contato a:hover {
+  color: #c89116;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+footer {
+  font-size: 0.875rem;
+}
+
+footer span {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   RESPONSIVIDADE EXTRA
+========================================= */
+
+/* Ajuste de espaçamento para telas pequenas */
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  #conteudos h2, #instagram h2, #contato h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Sessão Sobre Mim */
+#sobre img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sobre img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+#sobre ul li {
+  color: #34424d; /* cinza azulado */
+}
